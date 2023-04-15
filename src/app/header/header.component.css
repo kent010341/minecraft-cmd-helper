@@ -3,6 +3,7 @@
   width: 100%;
   background-color: #1A120B;
   align-items: center;
+  height: 64px;
 }
 
 .header-title {
@@ -12,6 +13,6 @@
 }
 
 .language {
-  font-size: 18px;
+  font-size: 20px;
   color: #D5CEA3;
 }

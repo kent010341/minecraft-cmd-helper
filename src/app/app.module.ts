@@ -3,16 +3,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { HeaderComponent } from './header/header.component';
 import { NgModule } from '@angular/core';
+// Component
+import { HeaderComponent } from './header/header.component';
+import { GiveCmdComponent } from './give-cmd/give-cmd.component';
 // Angular Material
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    GiveCmdComponent
   ],
   imports: [
     FlexLayoutModule,
@@ -21,7 +26,9 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserAnimationsModule,
     // Angular Material
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatListModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
